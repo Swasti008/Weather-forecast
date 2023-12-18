@@ -5,7 +5,7 @@ function getInputData() {
 }
 
 function getlanlon(cityName) {
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=32a5938ce2b337c33bc2af933247d11c`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=32a5938ce2b337c33bc2af933247d11c`)
         .then((response) => {
             return response.json();
         })
